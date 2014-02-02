@@ -1,12 +1,6 @@
 // Generated on 2014-01-22 using generator-ember 0.8.1
 'use strict';
 
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to match all subfolders:
-// 'test/spec/**/*.js'
-
 module.exports = function (grunt) {
     var _ = grunt.util._,
         path = require("path");
@@ -22,7 +16,7 @@ module.exports = function (grunt) {
     };
 
     require('load-grunt-config')(grunt, {
-      configPath: '/Users/fayimora/misc/cds/tasks/options',//path.join(__dirname, 'tasks/options'),
+      configPath: '/Users/fayimora/misc/cds/tasks/options/',//path.join(__dirname, 'tasks/options'),
       loadGruntTasks: true,
       init: true
     });
@@ -34,25 +28,6 @@ module.exports = function (grunt) {
     //         init: false
     //     })
     // );
-
-  // grunt.loadTasks('tasks'); // Loads tasks in `tasks/` folder
-  // config.env = process.env;
-
-    // grunt.initConfig({
-    //     yeoman: yeomanConfig,
-    //     // not used since Uglify task does concat,
-    //     // but still available if needed
-    //     /*concat: {
-    //         dist: {}
-    //     },*/
-    //     // not enabled since usemin task does concat and uglify
-    //     // check index.html to edit your build targets
-    //     // enable this task if you prefer defining your build targets here
-    //     /*uglify: {
-    //         dist: {}
-    //     },*/
-    //     // Put files not handled in other tasks here
-    // });
 
     grunt.registerTask('server', function (target) {
         grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
@@ -103,6 +78,4 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
-
-  // grunt.initConfig(config);
 };
