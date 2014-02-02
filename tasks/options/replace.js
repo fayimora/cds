@@ -1,5 +1,4 @@
 module.exports = {
-  replace: {
     app: {
       options: {
         variables: {
@@ -22,5 +21,4 @@ module.exports = {
         {src: '<%= yeoman.app %>/index.html', dest: '.tmp/index.html'}
       ]
     }
-  }
 };

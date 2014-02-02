@@ -6,8 +6,6 @@ module.exports = function (grunt) {
         path = require("path");
     // show elapsed time at the end
     require('time-grunt')(grunt);
-    // load all grunt tasks
-    // require('load-grunt-tasks')(grunt);
 
     // configurable paths
     var yeomanConfig = {
@@ -18,16 +16,11 @@ module.exports = function (grunt) {
     require('load-grunt-config')(grunt, {
       configPath: path.join(__dirname, 'tasks/options'),
       loadGruntTasks: true,
-      init: true
+      init: true,
+      config: {
+        yeoman: yeomanConfig
+      }
     });
-
-    // var config = _.extend({},
-    //     require('load-grunt-config')(grunt, {
-    //         configPath: '/Users/fayimora/misc/cds/tasks/options',//path.join(__dirname, 'tasks/options'),
-    //         loadGruntTasks: true,
-    //         init: false
-    //     })
-    // );
 
     grunt.registerTask('server', function (target) {
         grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');

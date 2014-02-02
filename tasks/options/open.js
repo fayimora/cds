@@ -1,7 +1,5 @@
 module.exports ={
-  open: {
-    server: {
-      path: 'http://localhost:<%= connect.options.port %>'
-    }
+  server: {
+    path: 'http://localhost:<%= connect.options.port %>'
   }
 };

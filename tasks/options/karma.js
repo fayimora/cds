@@ -1,7 +1,5 @@
 module.exports = {
-    karma: {
-        unit: {
-            configFile: 'karma.conf.js'
-        }
-    }
+  unit: {
+    configFile: 'karma.conf.js'
+  }
 };
