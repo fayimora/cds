@@ -16,7 +16,7 @@ module.exports = function (grunt) {
     };
 
     require('load-grunt-config')(grunt, {
-      configPath: '/Users/fayimora/misc/cds/tasks/options/',//path.join(__dirname, 'tasks/options'),
+      configPath: path.join(__dirname, 'tasks/options'),
       loadGruntTasks: true,
       init: true
     });
